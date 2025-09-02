@@ -8,6 +8,8 @@
        
     </style>
     <link rel="stylesheet" href="./css/style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="./js/javascript.js" defer></script>
 </head>
 <body>
@@ -18,7 +20,7 @@
     <nav>
         <a href="#sobre-mi">Sobre mí</a>
         <a href="./paginas/proyectos.html">Proyectos</a>
-        <a href="#contacto">Contacto</a>
+        <a href="./paginas/contacto.html">Contacto</a>
     </nav>
     <div class="container">
         <section id="sobre-mi">
@@ -28,44 +30,121 @@
             </p>
         </section>
         <section id="proyectos">
-            <h2>Proyectos</h2>
+            <h2>Mis trabajos</h2>
             <div class="proyectos">
                 <div class="proyecto">
                     <h3>Pagina en angular</h3>
                     <p>Diseño y desarrollo de paginas con el framework Angular.</p>
-                    <a href="#" target="_blank">Ver proyecto</a>
+                    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample1">
+                        Ver mas
+                    </a>
+                    
                 </div>
                 <div class="proyecto">
                     <h3>Portafolio Fotográfico</h3>
                     <p>Galería interactiva para un fotógrafo profesional.</p>
-                    <a href="#" target="_blank">Ver proyecto</a>
+                    <!-- Botón -->    
+                     <a  id="btnOpen" class="my-btn my-btn-primary" role="button">
+                         <button class="btn btn-primary"> Abrir Menu</button> 
+                    </a> 
                 </div>
                 <div class="proyecto">
-                    <h3>Blog Personal</h3>
-                    <p>Blog minimalista con sistema de comentarios y panel de administración.</p>
-                    <a href="#" target="_blank">Ver proyecto</a>
-                </div>
-                <div class="proyecto">
-                    <h3>Desarrollo de Backend</h3>
-                    <p>Diseño y desarrollo de backend con C#.</p>
-                    <a href="#" target="_blank">Ver proyecto</a>
-                </div>
-                <div class="proyecto">
-                    <h3>Paginas Laravel</h3>
-                    <p>Diseño y desarrollo de paginas en laravel.</p>
-                    <a href="#" target="_blank">Ver proyecto</a>
-                </div>
-                <div class="proyecto">
-                    <h3>Aplicación de Moviles</h3>
-                    <p>Aplicaciónes moviles utilizando flutter.</p>
-                    <a href="#" target="_blank">Ver proyecto</a>
-            </div>
+                        <h3>Desarrollo de Backend</h3>
+                        <p>Diseño y desarrollo de backend con C#.</p>
+                        <!-- Botón de abrir -->
+                            <a id="btnOpenBackend" role="button">
+                                <button class="btn btn-primary"> Abrir Menu</button> 
+                            </a>
+                        </div>
+
+               
         </section>
         <section id="contacto">
             <h2>Contacto</h2>
             <p>Puedes escribirme a <a href="mailto:alex@email.com">alex@email.com</a> o encontrarme en redes sociales.</p>
         </section>
+
     </div>
+    <!--DIVISION DE ANGULAR-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">ANGULAR</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Realizacion de paginas con el framework de angular un framework de javascript 
+                de los mas conocidados y utilizados en la actualidad.
+            </div>
+            <div class="imagen-angular">
+                <img src="./img/angular.png" alt="Angular Logo" width="200">
+                <img src="./img/Captura de pantalla (10).png" alt="Angular Logo" width="350">
+            </div>
+            <div>
+               Manejo de Clases Objetos Funciones , Guardianes
+                Servicios , Modulos , Componentes , Rutas.
+            </div>
+            <div class="imagen-angular">
+                <img src="./img/Captura de pantalla (11).png" alt="Angular Logo" width="350">
+            </div>
+        </div>
+    </div>
+    <!--DIVISION DE PORTAFOLIO-->
+    <!-- Offcanvas -->
+        <div class="my-offcanvas" id="myOffcanvas">
+        <div class="my-offcanvas-header">
+            <h5 class="my-offcanvas-title">Mi portafolio</h5>
+            <button type="button" class="my-btn-close" id="btnClose">×</button>
+        </div>
+
+    <!-- Offcanvas con scroll -->
+        <div class="my-offcanvas-body">
+            <div>
+            Mi portafolio personal dirigido a mostrar mis habilidades y proyectos en diseño web y desarrollo frontend.
+            Mostrar dónde he trabajado y qué tecnologías utilizo.
+            </div>
+            <div>
+            Esta es una página web hecha con HTML, CSS y JavaScript, donde muestro mi experiencia en creación de páginas web.
+            </div>
+            <div class="imagen-angular">
+            <img src="./img/Captura de pantalla (14).png" alt="Angular Logo" width="350">
+            </div>
+            <div>
+            Manejo de Clases, Objetos, Funciones, Guardianes, Servicios, Módulos, Componentes y Rutas con JS.
+            </div>
+            <div class="imagen-angular">
+            <img src="./img/Captura de pantalla (12).png" alt="Angular Logo" width="350">
+            </div>
+        </div>
+        </div>
+    <!--DIVISION DE Backend-->
+   <!-- Overlay para Backend -->
+        <div class="formBackend-overlay" id="formBackendOverlay">
+            <div class="formBackend" id="formBackend">
+            <div class="my-formBackend-header">
+                <h5 class="my-formBackend-title">Mi Back</h5>
+                <!-- Botón de cerrar -->
+                <button type="button" class="my-btn-close" id="btnCloseBackend">×</button>
+            </div>
+
+            <div class="my-formBackend-body">
+                <div>
+                    Realizacion de aplicacion de backend con C# y .NET, creando APIs robustas y seguras para aplicaciones web.
+                </div>
+                <div>
+                    Utlizacion de Entity Framework para la gestion de bases de datos y LINQ para consultas eficientes.
+                    Autenticacion y autorizacion con JWT.
+                </div>
+                <div class="imagen-angular">
+                        <img src="./img/Captura de pantalla (8).png" alt="Backend" width="350">
+                        <img src="./img/Captura de pantalla (6).png" alt="Backend" width="350">
+                        <img src="./img/Captura de pantalla (3).png" alt="Backend" width="350">
+                </div>
+            </div>
+            </div>
+        </div>
+    
+
     <footer>
         &copy; 2024 Alex . Todos los derechos reservados.
     </footer>

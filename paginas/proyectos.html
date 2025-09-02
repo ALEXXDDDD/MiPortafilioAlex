@@ -1,43 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos Realizados</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="./output.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos Realizados</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<header>
-    <h1>Hola estos son mis proyectos</h1>
-    <p>Lenguajes</p>
-</header>
-<nav>
-    <a href="../index.html">Sobre mí</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#contacto">Contacto</a>
-    <a href="../index.html">Volver al Inicio</a>
-</nav>
-<body>
-    <img src="" alt="">
-    <h1>Proyectos Realizados</h1>
-   
-    <div class="pag-proyectos">
-        <div class="pag-proyecto">
-            <u>Angular</u>
-            <img src="./../img/angular.png" alt="">
-            <p>Manejo de Angular 17 18</p>
-        </div>
-        <div class="pag-proyecto">
-            <u>Net 8</u>
-            <img src="./../img/net 8.png" alt="">
-            <p>Desarrollo de Backend en el lenguaje de C#</p>
-        </div>
-        <div class="pag-proyecto">
-            <u>Flutter</u>
-            <img src="./../img/flutter.png" alt="">
-            <p>Desarrollo de aplicacion moviles en el lengujae dart</p>
-        </div>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-8 shadow-lg">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold"> Proyectos Realizados</h1>
+      <p class="mt-2 text-lg">Lenguajes & Frameworks que domino</p>
     </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-center gap-8 py-3 text-gray-700 font-medium">
+      <a href="../index.html" class="hover:text-indigo-600 transition">Sobre mí</a>
+      <a href="#proyectos" class="hover:text-indigo-600 transition">Proyectos</a>
+      <a href="#contacto" class="hover:text-indigo-600 transition">Contacto</a>
+      <a href="../index.html" class="hover:text-indigo-600 transition">Inicio</a>
+    </div>
+  </nav>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="container mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Mis Tecnologías</h2>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- Card Angular -->
+      <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 text-center">
+        <img src="./../img/angular.png" alt="Angular" class="mx-auto h-24 mb-4">
+        <h3 class="text-xl font-semibold text-gray-900">Angular</h3>
+        <p class="text-gray-600 mt-2">Manejo de Angular 17 y 18 para desarrollo frontend escalable.</p>
+        <button class="mt-4 px-5 py-2 rounded-lg bg-indigo-600 text-white hover:bg-indigo-700 transition">
+          Ver más
+        </button>
+      </div>
+
+      <!-- Card .NET -->
+      <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 text-center">
+        <img src="./../img/net 8.png" alt=".NET" class="mx-auto h-24 mb-4">
+        <h3 class="text-xl font-semibold text-gray-900">.NET 8</h3>
+        <p class="text-gray-600 mt-2">Desarrollo de backend en C#, APIs seguras y escalables.</p>
+      </div>
+
+      <!-- Card Flutter -->
+      <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 text-center">
+        <img src="./../img/flutter.png" alt="Flutter" class="mx-auto h-24 mb-4">
+        <h3 class="text-xl font-semibold text-gray-900">Flutter</h3>
+        <p class="text-gray-600 mt-2">Desarrollo de aplicaciones móviles con Dart y Flutter.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Extra card (ejemplo empresa) -->
+  <section class="container mx-auto px-6 pb-16">
+    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition p-8">
+      <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+        </svg>
+      </span>
+      <h3 class="text-gray-900 mt-5 text-xl font-semibold">Empresas</h3>
+      <p class="text-gray-600 mt-3 leading-relaxed">
+        D Lopez es una compañía dedicada a la fabricación y venta de calzado, orientada principalmente a clientes mayoristas en la región Junín y en la ciudad de Huancayo. 
+        Esta página web fue creada para mostrar calidad, variedad y compromiso en cada uno de nuestros productos.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 text-center py-6">
+    &copy; 2024 Alex. Todos los derechos reservados.
+  </footer>
+
 </body>
 </html>

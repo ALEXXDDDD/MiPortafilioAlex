@@ -65,3 +65,85 @@
             color: #fff;
             margin-top: 2rem;
         }
+        .subtitulo{
+            align-items: center;
+            display: flex;
+            flex-direction: column-reverse; 
+            font-size: 2.5em; /* 2.5 * 16 = 40px */
+            text-decoration: none;
+        }
+    .my-offcanvas {
+    position: fixed;
+    top: 0;
+    left: -320px; /* Oculto */
+    width: 320px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 2px 0 10px rgba(0,0,0,.2);
+    transition: left 0.3s ease;
+    visibility: hidden;
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .my-offcanvas.my-show {
+    left: 0; /* Visible */
+    visibility: visible;
+  }
+
+  .my-offcanvas-header {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* AQUÍ el scroll */
+  .my-offcanvas-body {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 1rem;
+  }
+
+  .my-btn-close {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .imagen-angular {
+    margin: 1rem 0;
+  }
+  .formBackend {
+  position: fixed;
+  top: 0;
+  right: -100%;   /* Oculto a la derecha */
+  width: 400px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  transition: right 0.3s ease-in-out;
+  z-index: 1050;
+  padding: 20px;
+}
+
+.formBackend.active {
+  right: 0;  /* Aparece desde la derecha */
+}
+
+.my-formBackend-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-btn-close {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
