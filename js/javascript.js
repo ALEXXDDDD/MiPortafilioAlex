@@ -8,10 +8,7 @@ document.querySelectorAll('.proyecto').forEach(div => {
         div.style.transform = 'scale(1)';
     });
 });
-// Añade un mensaje de bienvenida al cargar la página
-// window.addEventListener('load', () => {
-//     alert('¡Bienvenido a mi portafolio!');
-// });
+
 document.querySelectorAll('.pag-proyectos').forEach(div => {
     div.addEventListener('mouseenter', () => {
         div.style.transform = 'scale(1.1)';
