@@ -4,62 +4,64 @@
     <meta charset="UTF-8">
     <title>Contacto - Alex</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
     <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 0; 
-            background: #f4f4f4;
-        }
-        .portada {
-            background: linear-gradient(135deg, #4e54c8, #8f94fb);
-            color: white;
-            padding: 60px 20px 40px 20px;
-            text-align: center;
-        }
-        .portada h1 {
-            margin: 0 0 10px 0;
-            font-size: 2.5em;
-        }
-        .portada p {
-            margin: 0;
-            font-size: 1.2em;
-        }
-        .contactos {
-            margin: 40px auto;
-            max-width: 400px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            padding: 30px 20px;
-            text-align: center;
-        }
-        .contactos a {
-            display: inline-block;
-            margin: 15px 20px;
-            text-decoration: none;
-            color: #4e54c8;
-            font-size: 1.1em;
-            transition: color 0.2s;
-        }
-        .contactos a:hover {
-            color: #222;
-        }
-        .icon {
-            vertical-align: middle;
-            margin-right: 8px;
-            font-size: 1.5em;
-        }
+      
     </style>
+  
+  
+    <link rel="stylesheet" href="./../css/styleContacto.css">
     <!-- Iconos de Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+   
     <div class="portada">
         <h1>¡Hola! Soy Alex</h1>
         <p>Bienvenido a mi portafolio. Aquí puedes encontrar mis redes de contacto.</p>
     </div>
+    
+    <!--Carrusel-->
+    <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="https://img.freepik.com/vector-gratis/botones-contacto-establecen_78370-9250.jpg?semt=ais_hybrid&w=740&q=80" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0YtLqRwgQpZrAWGiDlkccvTjGDCKUokQ_Tg&s" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0YtLqRwgQpZrAWGiDlkccvTjGDCKUokQ_Tg&s" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
     <div class="contactos">
         <h2>Contáctame</h2>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Tu nombre</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nombre">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Escribe Breve Descripcion</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
         <a href="https://facebook.com/tuusuario" target="_blank">
             <i class="fab fa-facebook icon"></i>Facebook
         </a>
